@@ -1,18 +1,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    input.sh                                           :+:      :+:    :+:    #
+#    start.sh                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/25 14:58:24 by tfarenga          #+#    #+#              #
-#    Updated: 2020/06/29 17:17:07 by tfarenga         ###   ########.fr        #
+#    Updated: 2020/07/01 15:04:43 by tfarenga         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #!/bin/bash
 
-service php-fpm start && service nginx start
+service mysql start && mysql < init.sql
+service php7.3-fpm start && service nginx start
 
 while true
 do

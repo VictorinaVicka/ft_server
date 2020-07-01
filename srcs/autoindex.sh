@@ -6,7 +6,7 @@
 #    By: tfarenga <tfarenga@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/25 15:20:24 by tfarenga          #+#    #+#              #
-#    Updated: 2020/06/29 17:17:14 by tfarenga         ###   ########.fr        #
+#    Updated: 2020/06/30 21:41:34 by tfarenga         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,12 +14,12 @@
 
 if grep -q "autoindex on" /etc/nginx/sites-available/localhost
 then
-	sed -i 's/autoindex on/autoindex off' /etc/nginx/sites-available/localhost
-	echo "Nginx autoindex disabled"
+	sed -i 's/autoindex on/autoindex off/' /etc/nginx/sites-available/localhost
+	echo "autoindex disabled"
 	service nginx restart
 elif grep -q "autoindex off" /etc/nginx/sites-available/localhost
 then
-	sed -i 's/autoindex off/autoindex on' /etc/nginx/sites-available/localhost
-	echo "Nginx autoindex enablead"
+	sed -i 's/autoindex off/autoindex on/' /etc/nginx/sites-available/localhost
+	echo "autoindex enablead"
 	service nginx restart
 fi

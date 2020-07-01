@@ -154,4 +154,4 @@ $cfg['SaveDir'] = '';
  * in the doc/ folder or at <https://docs.phpmyadmin.net/>.
  */
 
- ?>
+?>

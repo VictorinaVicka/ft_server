@@ -3,7 +3,6 @@ php-gd - модуль GD для PHP
 php-mbstring - модуль MBSTRING для PHP
 php7.0-common - документация, примеры и общий модуль для PHP
 php7.0-xmlrpc - модуль XMLRPC-EPI для PHP
-php7.0-cli - интерпретатор командной строки для языка сценариев PHP
 php7.0-gmp - модуль GMP для PHP
 php7.0-curl - модуль CURL для PHP
 php7.0-intl - модуль интернационализации для PHP
